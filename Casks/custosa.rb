@@ -13,6 +13,7 @@ cask "custosa" do
 
   postflight do
     system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{appdir}/Custosa.app"]
+    system_command "/usr/bin/open", args: ["-a", "Custosa"], sudo: false
   end
 
   uninstall launchctl: "com.custosa.proxy"
