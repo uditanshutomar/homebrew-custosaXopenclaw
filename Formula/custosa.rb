@@ -10,7 +10,16 @@ class Custosa < Formula
   depends_on "python@3.12"
 
   def install
-    virtualenv_install_with_resources
+    venv = virtualenv_create(libexec, "python3.12")
+
+    # Install dependencies
+    system libexec/"bin/pip", "install", "aiohttp>=3.9", "websockets>=12.0", "python-telegram-bot>=20.0", "requests>=2.28.0"
+
+    # Install custosa itself
+    venv.pip_install buildpath
+
+    # Link the binary
+    bin.install_symlink libexec/"bin/custosa"
   end
 
   def caveats
