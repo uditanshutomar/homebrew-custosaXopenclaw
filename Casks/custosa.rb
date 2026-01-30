@@ -1,6 +1,6 @@
 cask "custosa" do
   version "1.0.0"
-  sha256 "bfb5b46947ee2beb00eeb6fa01423cc89670af951211ae190088e3a5cb1a53fd"
+  sha256 "954a2fa70a3009a6cad323cad6b6765693bfcd79d1706faf1ceedf2739fa31d8"
 
   url "https://github.com/uditanshutomar/CustosaXopenclaw/releases/download/#{version}/CustosaXopenclaw.zip"
   name "Custosa"
