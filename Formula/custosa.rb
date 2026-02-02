@@ -3,8 +3,8 @@ class Custosa < Formula
 
   desc "Prompt Injection Protection for OpenClaw/Moltbot"
   homepage "https://github.com/uditanshutomar/CustosaXopenclaw"
-  url "https://github.com/uditanshutomar/CustosaXopenclaw/archive/refs/tags/1.1.0.tar.gz"
-  sha256 "8fd7a33b83f43761c5112dbceb2471ce5b9da390671c829c0eeaf1223e8c9dd5"
+  url "https://github.com/uditanshutomar/CustosaXopenclaw/archive/refs/tags/v1.2.0.tar.gz"
+  sha256 "a116226d70e2d3ef240f4af9a3c8ce541e55d58a1afae61b26525a2609c7ff70"
   license :cannot_represent
 
   depends_on "python@3.12"
